@@ -7,25 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * sprawdzenie efektywności poszczególnych struktur danych
- * lista jednokierunkowa przechowująca posortowane po kluczu elementy
- * drzewo BST
- * ponadprogramowo struktura drzewa AVL
- * 
- * operacje: 
- * dodawania elementu, 
- * usuwania elementu, 
- * dostępu do elementu o określonym kluczu, 
- * iterowania po elementach w sposób rosnący po kluczu elementu
- * 
- * efektywnosc dzialania na 4 typach instancji wejsciowych:
- * klucze rosnące, malejące, 
- * V-kształtne, A-kształtne, 
- * stałe, 
- * losowe
- */
-
 namespace MiniProjekt
 {
     class BinarySearchTree<Key, Value> : IEnumerable<KeyValuePair<Key, Value>> where Key : IComparable<Key>
