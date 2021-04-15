@@ -15,9 +15,9 @@ if not exist ".\backup\%date%" md ".\backup\%date%"
 
 for /r %new_path% %%a in (*.%f_extension%) do (
   set f_name=%%~na
-  set f_letter=%f_name:~0,1%
-  if not exist ".\backup\%date%\%f_letter%" md ".\backup\%date%\%f_letter%"
-  copy "%%~fa" ".\backup\%date%\%f_letter%"
+  set f_letter=!f_name:~0,1!
+  if not exist ".\backup\%date%\!f_letter!" md ".\backup\%date%\!f_letter!"
+  copy "%%~fa" ".\backup\%date%\!f_letter!"
   )
 
 :end
