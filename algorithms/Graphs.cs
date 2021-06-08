@@ -106,8 +106,9 @@ namespace K27Graphs
         }
     }
 
-    class EdgeList : GraphR
+    class EdgeList : GraphR // lista krawedzi
     {
+        // 1->2->3  [(1,2), (2,3)]
         class Edge
         {
             public int pred;
