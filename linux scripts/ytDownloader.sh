@@ -60,21 +60,32 @@ echo "Pomyslna weryfikacja uzytkownika jako sudo"
 
 #https://www.youtube.com/watch?v=a6RVze4Z15w
 #link do filmiku na youtube, gdzie jest filmik, ktory nas interesuje
-LINKTOYTVIDEO=$1
+echo -n "Podaj link do video (https://www.youtube.com/watch?v=a6RVze4Z15w): "
+read LINKTOYTVIDEO
+#LINKTOYTVIDEO=$1
 
 #czas od ktorego chcemy przyciac nasz filmik, podany w formacie np: 
 #00:00:05
-STARTVIDEO=$2
+echo -n "Podaj czas od ktorego chcesz przyciac filmik (00:00:05): "
+read STARTVIDEO
+#STARTVIDEO=$2
 
 #czas do ktorego chcemy przyciac nasz filmik, podany w formacie np: 
 #00:00:22
-ENDOFVIDEO=$3
+echo -n "Podaj czas do ktorego chcemy przyciac nasz filmik (00:00:15): "
+read ENDOFVIDEO
+#ENDOFVIDEO=$3
 
 #nazwa naszego pliku wyjsciowego, podana bez rozszerzenia np:
 #nazwaPliku
-MAINOUTPUTFILENAME=$4
+echo -n "Podaj nazwe wyjsciowa pliku (nazwaPliku): "
+read MAINOUTPUTFILENAME
+#MAINOUTPUTFILENAME=$4
 
 #przykladowe wywolanie skryptu: 
+#sudo ./ytDownloader.sh
+
+#wczesniejsze wywolanie skryptu: 
 #sudo ./ytDownloader.sh https://www.youtube.com/watch?v=a6RVze4Z15w 00:00:05 00:00:22 nazwaPliku
 
 #pobranie filmiku z serwisu youtube
