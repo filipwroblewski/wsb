@@ -45,7 +45,8 @@ getYtVideo(){
 	printf "Pobieranie filmiku z serwisu YouTube ($LINKTOYTVIDEO)\n"
 	youtube-dl -f 18 -q "$LINKTOYTVIDEO"
 	OUTPUTFILENAME=`youtube-dl --get-filename "$LINKTOYTVIDEO"`
-	PATHTOVIDEO="/home/osboxes/Desktop/skrypty/$OUTPUTFILENAME"
+	CURRENTPATH=`pwd`
+	PATHTOVIDEO="$CURRENTPATH/$OUTPUTFILENAME"
 }
 
 echo "Uruchomiono $0"
