@@ -43,10 +43,12 @@ fileCut(){
 
 getYtVideo(){
 	printf "Pobieranie filmiku z serwisu YouTube ($LINKTOYTVIDEO)\n"
+	
 	youtube-dl -f 18 -q "$LINKTOYTVIDEO"
-	OUTPUTFILENAME=`youtube-dl --get-filename "$LINKTOYTVIDEO"`
+	OUTPUTFILENAME=`youtube-dl -f 18 --get-filename "$LINKTOYTVIDEO"`
 	CURRENTPATH=`pwd`
 	PATHTOVIDEO="$CURRENTPATH/$OUTPUTFILENAME"
+	printf "$PATHTOVIDEO\n"
 }
 
 echo "Uruchomiono $0"
