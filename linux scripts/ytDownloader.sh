@@ -35,10 +35,14 @@ fileCut(){
 	{
 		ffmpeg -i "$PATHTOVIDEO" -ss "$STARTVIDEO" -to "$ENDOFVIDEO" "$MAINOUTPUTFILENAME.$FILEEXTENSION"
 	} &> /dev/null
+	printf "Pomyslnie przycieto plik $FILEEXTENSION\n"
+	#printf "$PATHTOVIDEO"
+	rm -f "$PATHTOVIDEO"
+	
 }
 
 getYtVideo(){
-	printf "Pobieranie filmiku z serwisu YouTube ($LINKTOYTVIDEO)"
+	printf "Pobieranie filmiku z serwisu YouTube ($LINKTOYTVIDEO)\n"
 	youtube-dl -f 18 -q "$LINKTOYTVIDEO"
 	OUTPUTFILENAME=`youtube-dl --get-filename "$LINKTOYTVIDEO"`
 	PATHTOVIDEO="/home/osboxes/Desktop/skrypty/$OUTPUTFILENAME"
