@@ -1,23 +1,33 @@
-﻿using System;
+using System;
 
-namespace zajecia_1
+namespace ConsoleApp1
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Podaj liczbę kontaktów");
+            int numOfContacts = int.Parse(Console.ReadLine());
+
             Osoba osoba1 = new Osoba();
 
-            //osoba1.Imie = "MojeImie"; // must be public string Imie
-            //osoba1.Nazwisko = "MojeNazwisko";
+            string[,] osoby = new string[numOfContacts, 9];
 
-            //Console.WriteLine($"Nazywam się {osoba1.Imie} {osoba1.Nazwisko}.");
+            for (int i = 0; i < numOfContacts; i++)
+            {
+                osoba1.UstawDane(i, osoby);
+                osoba1.PrzedstawSie();
+                Console.WriteLine("\n\n");
+            }
 
-            osoba1.UstawDane("Jan", "Nowak");
-            osoba1.PrzedstawSie();
+            Console.WriteLine("\n\n\n------------------\n\n\n");
+            for (int i = 0; i < numOfContacts; i++)
+            {
+                Console.WriteLine($"{osoby[i, 1]} {osoby[i, 2]}");
+            }
 
-            //Adres adres1 = new Adres();
-            //adres1.OdczytDanych();
+
+            Console.ReadKey();
         }
     }
 }
