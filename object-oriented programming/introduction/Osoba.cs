@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace zajecia_1
+namespace ConsoleApp1
 {
     class Osoba
     {
@@ -21,17 +21,32 @@ namespace zajecia_1
             set => _nazwisko = value;
         }
 
+        Adres adres1 = new Adres();
+
         public void PrzedstawSie()
         {
             Console.WriteLine($"Nazywam się {this._imie} {this.nazwisko}.");
+            this.adres1.OdczytDanych();
         }
 
-        public void UstawDane(string imie, string nazwisko)
+        public void UstawDane(int i, string[,] osoby)
         {
-            this._imie = imie;
-            this.nazwisko = nazwisko;
+            Console.WriteLine("--- Dane osobowe ---");
+            osoby[i, 0] = Convert.ToString(i);
+
+            Console.Write("Imie: ");
+            this._imie = Console.ReadLine();
+            osoby[i, 1] = this.imie;
+
+
+
+            Console.Write("Nazwisko: ");
+            this.nazwisko = Console.ReadLine();
+            osoby[i, 2] = this.nazwisko;
+
+            this.adres1.SetUpAddress(i, osoby);
         }
 
-        Adres adres1 = new Adres();
+        
     }
 }
