@@ -1,0 +1,56 @@
+1. Co to jest komputer SoC? Do czego mogą być wykorzystywane?
+System na czipie (ang. system on chip, SoC), w skrócie czip – mianem tym określa się układ scalony zawierający kompletny system elektroniczny, w tym układy cyfrowe, analogowe (także radiowe) oraz cyfrowo-analogowe. Poszczególne moduły tego systemu, ze względu na ich złożoność, pochodzą zwykle od różnych dostawców. Przykładowo jednostka centralna pochodzi od jednego dostawcy, a porty komunikacji szeregowej od innego. Typowym obszarem zastosowań SoC są systemy wbudowane, a najbardziej rozpowszechnionym przedstawicielem tego rozwiązania są systemy oparte na procesorach w architekturze ARM.
+
+2. Wyszukaj w Internecie informacje dotyczące Raspberry PI, określ
+	a. budowę
+		https://forbot.pl/blog/kurs-raspberry-pi-czym-jest-popularna-malinka-id21044
+	b. dostępne wersje
+		wersja A
+		wersja B
+		Raspberry Pi (wersja 1)
+		Raspberry Pi 2
+		Raspberry Pi Zero
+		Raspberry Pi 3
+		Raspberry Pi 4
+
+	c. porównaj w tabeli ich parametry techniczne
+		https://pl.wikipedia.org/wiki/Raspberry_Pi
+
+	d. jakich systemów operacyjnych możesz użyć?
+		OpenELEC
+		OSMC
+		LibreELEC
+		RecalboxOS
+		Batocera Linux
+		Lakka
+		Ubuntu Mate
+		Kali Linux
+
+3. Opisz proces instalacji systemu operacyjnego na Raspberry Pi (0) do uruchomienia SoC.
+	https://botland.com.pl/content/60-instalacja-systemu-operacyjnego-raspberry-pi
+
+	a. lista potrzebnych elementów
+
+	b. kolejne czynności do wykonania (mogą być różne rozwiązania)
+
+4. Pobierz i zainstaluj przy użyciu VirtualBox Debian Raspberry Pi Linux np. https://www.raspberrypi.org/downloads/raspberry-pi-desktop/
+	https://roboticsbackend.com/install-raspbian-desktop-on-a-virtual-machine-virtualbox/
+
+5. Konfiguracja po instalacji - polecenie, źródło,efekt
+
+	a. konfiguracja połączenia sieciowego
+
+	b. aktualizacja systemu operacyjnego
+
+	c. instalacja wybranych programów z repozytorium np. hw, mc, htop itp.
+
+	d. jak inaczej można zainstalować program na RPi?
+
+6. Testowanie parametrów i połączeń - przykładowe polecenia.
+
+7. Wyszukaj i/lub zaproponuj projekt wykorzystujący Raspberry Pi do wybranego celu. Podaj kilka pomysłów, dla wybranego przybliż sposób realizacji i wykorzystania.
+	https://www.youtube.com/watch?v=DPwnaYJWL5g
+
+
+
+
